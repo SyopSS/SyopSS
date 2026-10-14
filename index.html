@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Expérience Resort Hotel | www.lexperienceresorthotel.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #f5f1e9; color: #2c2a29; font-family: 'Playfair Display', serif; }
+        .bg-cream { background-color: #f5f1e9; }
+        .bg-olive { background-color: #4A5D4E; }
+        .text-olive { color: #4A5D4E; }
+        .border-olive { border-color: #4A5D4E; }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.55)), url('snackbar.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-cream">
+
+    <!-- ÜST BİLGİ & LÜKS MENÜ -->
+    <header class="py-4 px-10 flex justify-between items-center bg-[#f5f1e9]/95 backdrop-blur-md sticky top-0 z-50 border-b border-stone-300">
+        <div class="flex items-center space-x-3">
+            <!-- logo 1.png -->
+            <img src="logo.png" alt="L'Expérience Logo" class="w-12 h-12 object-contain rounded-full border border-stone-400 bg-white p-0.5">
+            <div>
+                <h1 class="text-sm font-bold tracking-[0.2em] text-stone-900">L'EXPÉRIENCE</h1>
+                <p class="text-[9px] tracking-[0.25em] text-stone-600 uppercase">Resort Hotel</p>
+            </div>
+        </div>
+
+        <div class="hidden lg:flex items-center space-x-2 bg-stone-200/70 px-4 py-1.5 rounded-full text-xs text-stone-700 border border-stone-300">
+            <span>🌐</span>
+            <span class="tracking-wider">www.lexperienceresorthotel.com</span>
+        </div>
+
+        <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider text-stone-800">
+            <a href="#" class="hover:text-olive transition">Anasayfa</a>
+            <a href="#alanlar" class="hover:text-olive transition">Deneyimler</a>
+            <a href="#odalar" class="hover:text-olive transition">Odalar & Fiyatlar</a>
+            <a href="#rezervasyon" class="hover:text-olive transition">Rezervasyon</a>
+        </nav>
+
+        <a href="#rezervasyon" class="bg-[#4A5D4E] text-white px-6 py-2.5 rounded-full text-xs tracking-widest uppercase hover:bg-stone-800 transition shadow-md">
+            Rezervasyon Yap
+        </a>
+    </header>
+
+    <!-- HERO / KARŞILAMA BÖLÜMÜ -->
+    <section class="relative h-[85vh] hero-bg flex flex-col items-center justify-center text-center px-4">
+        <div class="inline-block border border-white/40 bg-black/20 backdrop-blur-sm text-white px-5 py-1.5 rounded-full text-xs tracking-[0.2em] uppercase mb-6">
+            Kızılot, Manavgat / Antalya
+        </div>
+
+        <h2 class="text-4xl md:text-7xl font-light text-white tracking-wide uppercase mb-4" style="font-family: 'Playfair Display', serif;">
+            DOĞA, LEZZET,<br><span class="italic font-normal tracking-wider" style="font-family: 'Playfair Display', serif; text-transform: none;">DENEYİM, SİZ!</span>
+        </h2>
+
+        <p class="text-white/90 text-lg md:text-xl italic tracking-wider mb-10">
+            “Konuk değil, başrol olun...”
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#alanlar" class="bg-[#4A5D4E] text-white px-8 py-3 rounded-full text-xs tracking-widest uppercase hover:bg-white hover:text-stone-900 transition shadow-lg">
+                Deneyimleri Keşfet
+            </a>
+            <a href="#odalar" class="border border-white/80 text-white bg-black/20 backdrop-blur-sm px-8 py-3 rounded-full text-xs tracking-widest uppercase hover:bg-white hover:text-stone-900 transition shadow-lg">
+                Odaları İncele
+            </a>
+        </div>
+    </section>
+
+    <!-- KULLANIM ALANLARI / DENEYİMLER -->
+    <section id="alanlar" class="py-20 px-10 max-w-7xl mx-auto">
+        <h3 class="text-3xl md:text-4xl font-light text-center mb-16">KEŞİF ve DENEYİM ALANLARI</h3>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <img src="amfi.jpeg" alt="Gastronomi Amfisi" class="w-full h-64 object-cover rounded-lg mb-4">
+                <h4 class="text-2xl font-medium mb-2 text-olive">Gastronomi Amfisi</h4>
+                <p class="text-stone-600 text-sm">Deniz kenarındaki bu özel amfide güneşin batışıyla beraber şeflerin eşsiz mutfak show ve sunumlarını izleyebilirsiniz.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <img src="ateş.jpeg" alt="Kamp Ateşi Locaları" class="w-full h-64 object-cover rounded-lg mb-4">
+                <h4 class="text-2xl font-medium mb-2 text-olive">Kamp Ateşi Locaları</h4>
+                <p class="text-stone-600 text-sm">Akşam serinliğinde ateş etrafında samimi, sıcak sohbetler ve unutulmaz anlar yaşayın.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <img src="loca.jpeg" alt="Dinlenme Cabanaları" class="w-full h-64 object-cover rounded-lg mb-4">
+                <h4 class="text-2xl font-medium mb-2 text-olive">Dinlenme Locaları & Cabanalar</h4>
+                <p class="text-stone-600 text-sm">Doğanın kalbinde, zeytin ağaçları ve yeşilliğin arasında tamamen size özel huzur köşeleriyle sessizliğin tadını çıkartın.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <img src="hamak.jpeg" alt="Hamak Alanları" class="w-full h-64 object-cover rounded-lg mb-4">
+                <h4 class="text-2xl font-medium mb-2 text-olive">Hamak ve Dinlenme Alanları</h4>
+                <p class="text-stone-600 text-sm">Otelin interaktif hareketli temposunun yanı sıra dinginlik arayanlar için kitabınızı okuyabileceğiniz, kuş sesleri eşliğinde dinleneceğiniz sakin noktalarda keyifli zaman geçirin.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md md:col-span-2">
+                <img src="workshop.jpeg" alt="Workshop Alanları" class="w-full h-80 object-cover rounded-lg mb-4">
+                <h4 class="text-2xl font-medium mb-2 text-olive">Doğada Lezzet Workshop Alanları</h4>
+                <p class="text-stone-600 text-sm">Misafirlerimizin sadece izleyici olmaya geldiği değil aktif olarak katıldığı, doğayla içiçe uygulamalı yemek yapılan sanat atölyeleriyle yeni deneyimler kazanın.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ODA FİYATLARI ($) -->
+    <section id="odalar" class="py-20 px-10 max-w-6xl mx-auto text-center">
+        <h3 class="text-3xl md:text-4xl font-light mb-4">Lüks Konaklama Fiyatları ($)</h3>
+        <p class="text-stone-600 mb-12">Size en uygun odayı seçin, ayrıcalıklı dünyanın kapılarını aralayın.</p>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl shadow overflow-hidden">
+                <img src="oda1.png" alt="Deluxe Bahçe Odası" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h4 class="text-xl font-medium mb-2">Deluxe Bahçe Odası</h4>
+                    <p class="text-3xl font-bold text-olive mb-4">$350 <span class="text-xs text-stone-500">/ gece</span></p>
+                    <p class="text-stone-600 text-sm mb-6">Doğa manzaralı, konforlu ve estetik tasarım odamız.</p>
+                    <a href="#rezervasyon" class="block bg-stone-900 text-white py-2.5 rounded text-xs uppercase tracking-wider hover:bg-olive transition">Seç</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow overflow-hidden border-2 border-olive">
+                <img src="oda2.png" alt="Gastronomi Süiti" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h4 class="text-xl font-medium mb-2">Gastronomi Süiti</h4>
+                    <p class="text-3xl font-bold text-olive mb-4">$650 <span class="text-xs text-stone-500">/ gece</span></p>
+                    <p class="text-stone-600 text-sm mb-6">Özel teras ve gastronomi odaklı ayrıcalıklar sunan odamız.</p>
+                    <a href="#rezervasyon" class="block bg-olive text-white py-2.5 rounded text-xs uppercase tracking-wider hover:bg-stone-900 transition">Seç</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow overflow-hidden">
+                <img src="oda3.png" alt="Havuz Başı Villa" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h4 class="text-xl font-medium mb-2">Havuz Başı Villa</h4>
+                    <p class="text-3xl font-bold text-olive mb-4">$1,200 <span class="text-xs text-stone-500">/ gece</span></p>
+                    <p class="text-stone-600 text-sm mb-6">Tamamen size özel alan, havuz ve VIP hizmetlerden oluşan odamız.</p>
+                    <a href="#rezervasyon" class="block bg-stone-900 text-white py-2.5 rounded text-xs uppercase tracking-wider hover:bg-olive transition">Seç</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REZERVASYON & BİLGİ TALEBİ FORMU -->
+    <section id="rezervasyon" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="bg-[#fbf9f4] border border-stone-300 rounded-3xl p-8 md:p-14 shadow-xl grid md:grid-cols-2 gap-12 items-center">
+            
+            <div>
+                <p class="text-xs tracking-[0.2em] uppercase text-stone-500 mb-2 font-sans font-semibold">BİZE ULAŞIN</p>
+                <h3 class="text-3xl md:text-4xl font-light mb-4" style="font-family: 'Playfair Display', serif;">Rezervasyon & Bilgi Talebi</h3>
+                <p class="text-stone-600 text-sm mb-8 leading-relaxed">
+                    Unutulmaz bir tatil veya özel bir gastronomi deneyimi planlamak için formu doldurun ya da doğrudan iletişim kanallarımızdan bize ulaşın.
+                </p>
+
+                <div class="space-y-6 text-sm text-stone-700">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-full bg-stone-200 flex items-center justify-center shrink-0">📍</div>
+                        <div>
+                            <strong class="block text-stone-900 font-medium">Adres</strong>
+                            <span class="text-stone-600 text-xs">Kızılot, Manavgat / Antalya</span>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-full bg-stone-200 flex items-center justify-center shrink-0">📞</div>
+                        <div>
+                            <strong class="block text-stone-900 font-medium">Telefon</strong>
+                            <span class="text-stone-600 text-xs">+90 242 217 07 07</span>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-full bg-stone-200 flex items-center justify-center shrink-0">🌐</div>
+                        <div>
+                            <strong class="block text-stone-900 font-medium">Web Adresi</strong>
+                            <span class="text-stone-600 text-xs">www.lexperienceresorthotel.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="space-y-4" onsubmit="event.preventDefault(); alert('Rezervasyon talebiniz alınmıştır. Teşekkür ederiz!');">
+                <div>
+                    <label class="block text-[11px] tracking-wider uppercase text-stone-600 font-semibold mb-1">Ad Soyad</label>
+                    <input type="text" required placeholder="Adınız Soyadınız" class="w-full bg-white border border-stone-300 rounded-lg px-4 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-stone-600">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-[11px] tracking-wider uppercase text-stone-600 font-semibold mb-1">E-Posta</label>
+                        <input type="email" required placeholder="ornek@mail.com" class="w-full bg-white border border-stone-300 rounded-lg px-4 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-stone-600">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] tracking-wider uppercase text-stone-600 font-semibold mb-1">Telefon</label>
+                        <input type="tel" required placeholder="+90 5XX XXX XX XX" class="w-full bg-white border border-stone-300 rounded-lg px-4 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-stone-600">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-[11px] tracking-wider uppercase text-stone-600 font-semibold mb-1">Giriş Tarihi</label>
+                        <input type="date" required class="w-full bg-white border border-stone-300 rounded-lg px-4 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-stone-600">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] tracking-wider uppercase text-stone-600 font-semibold mb-1">Oda Tipi</label>
+                        <select class="w-full bg-white border border-stone-300 rounded-lg px-4 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-stone-600">
+                            <option>Deluxe Bahçe Odası ($350 / gece)</option>
+                            <option>Gastronomi Süiti ($650 / gece)</option>
+                            <option>Havuz Başı Villa ($1,200 / gece)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-[11px] tracking-wider uppercase text-stone-600 font-semibold mb-1">Özel Notunuz / İstekleriniz</label>
+                    <textarea rows="3" placeholder="Özel istekleriniz veya notunuz..." class="w-full bg-white border border-stone-300 rounded-lg px-4 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-stone-600"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-[#4A5D4E] text-white py-3.5 rounded-lg text-xs uppercase tracking-widest hover:bg-stone-800 transition shadow-md font-sans font-semibold">
+                    Rezervasyon / Bilgi Talebi Gönder
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- İLETİŞİM & ALT BİLGİ -->
+    <footer class="py-16 bg-stone-900 text-stone-300 text-center px-6">
+        <h4 class="text-2xl font-light text-white mb-4 tracking-wider">L'EXPÉRIENCE RESORT HOTEL</h4>
+        <p class="text-sm text-stone-400 mb-6">Kızılot Mah., Manavgat / Antalya — www.lexperienceresorthotel.com</p>
+        <p class="text-xs text-stone-500">&copy; 2026 Tüm hakları saklıdır. Tasarım ve Vizyon Size Aittir.</p>
+    </footer>
+
+</body>
+</html>
